@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maratona <<Cidade>> — Início</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module">
+    import { startCountdown, startSlider, enableLightbox, setupForm } from './assets/js/script.js';
+    window.startCountdown=startCountdown;
+    window.startSlider=startSlider;
+    window.enableLightbox=enableLightbox;
+    window.setupForm=setupForm;
+  </script>
+</head>
+<body>
+<header class="header">
+      <nav class="navbar container">
+        <a class="logo" href="index.html">
+          <div class="logo-badge"><span>42</span></div>
+          <span>Cicuito Maratonas Brasil</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">Início</a>
+          <a href="inscricoes.html" >Inscrições</a>
+          <a href="cidade.html" >Cidades</a>
+          <a href="proximas.html" >Próximas</a>
+          <a href="termo.html" >Termo</a>
+          <a href="faq.html" >FAQ</a>
+        </div>
+      </nav>
+    </header>
+<main class="container">
+
+<section class="hero">
+  <div>
+    <h1>Maratonas de 2026</h1>
+    <p>Prepare-se para as corridas mais empolgantes do ano! Garanta sua vaga, confira as atrações das cidades e fique de olho na contagem regressiva.</p>
+    <div class="cta">
+      <a class="button" href="inscricoes.html">Quero me inscrever</a>
+      <a class="button" href="proximas.html">Ver calendário</a>
+    </div>
+  </div>
+  <div class="hero-card banner">
+    <h2>Faltam</h2>
+    <div class="countdown">
+      <div class="timebox"><h3 id="dd">--</h3><small>dias</small></div>
+      <div class="timebox"><h3 id="hh">--</h3><small>horas</small></div>
+      <div class="timebox"><h3 id="mm">--</h3><small>min</small></div>
+      <div class="timebox"><h3 id="ss">--</h3><small>seg</small></div>
+    </div>
+    <p class="help">Contagem regressiva atualizada a cada segundo.</p>
+  </div>
+</section>
+
+<h2>Galeria destaque</h2>
+<div class="slider">
+  <div class="slides">
+    <div class="slide"><img src="assets/images/Index.svg" alt="Slide 1"></div>
+</div>
+
+</main>
+<footer class="footer">
+  © 2025 Maratona &middot; Hotsite acadêmico
+</footer>
+</body>
+</html>

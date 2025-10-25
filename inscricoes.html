@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscrições — Maratona <<Cidade>></title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module">
+    import { startCountdown, startSlider, enableLightbox, setupForm } from './assets/js/script.js';
+    window.startCountdown=startCountdown;
+    window.startSlider=startSlider;
+    window.enableLightbox=enableLightbox;
+    window.setupForm=setupForm;
+  </script>
+</head>
+<body>
+<header class="header">
+      <nav class="navbar container">
+        <a class="logo" href="index.html">
+          <div class="logo-badge"><span>42</span></div>
+          <span>Cicuito Maratonas Brasil</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" >Início</a>
+          <a href="inscricoes.html" aria-current="page">Inscrições</a>
+          <a href="cidade.html" >Cidades</a>
+          <a href="proximas.html" >Próximas</a>
+          <a href="termo.html" >Termo</a>
+          <a href="faq.html" >FAQ</a>
+        </div>
+      </nav>
+    </header>
+<main class="container">
+
+<h1>Inscrições</h1>
+<p>Preencha o formulário abaixo. Todos os campos são obrigatórios. O IMC permitido deve estar entre 17 e 35.</p>
+
+<div id="form-alert" class="alert" style="display:none"></div>
+
+<form id="inscricao-form" class="form" novalidate>
+  <div class="form-row">
+    <div>
+      <label for="nome">Nome completo*</label>
+      <input id="nome" name="nome" required placeholder="Seu nome">
+    </div>
+    <div>
+      <label for="endereco">Endereço*</label>
+      <input id="endereco" name="endereco" required placeholder="Rua, número, bairro">
+    </div>
+  </div>
+  <div class="form-row">
+    <div>
+      <label for="filiacao">Filiação*</label>
+      <input id="filiacao" name="filiacao" required placeholder="Nome da mãe/pai ou responsável">
+    </div>
+    <div>
+      <label for="nascimento">Data de nascimento*</label>
+      <input id="nascimento" name="nascimento" type="date" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div>
+      <label for="peso">Peso (kg)*</label>
+      <input id="peso" name="peso" type="number" min="30" max="300" step="0.1" required placeholder="Ex.: 70.5">
+    </div>
+    <div>
+      <label for="altura">Altura (m)*</label>
+      <input id="altura" name="altura" type="number" min="1.2" max="2.5" step="0.01" required placeholder="Ex.: 1.75">
+    </div>
+    <div>
+      <label for="imc">IMC (auto)</label>
+      <input id="imc" name="imc" readonly placeholder="--">
+    </div>
+  </div>
+
+  <div>
+    <label><input type="checkbox" required> Confirmo que li e aceito o <a href="termo.html">Termo de Responsabilidade</a>.</label>
+  </div>
+
+  <button class="button" type="submit">Enviar inscrição</button>
+</form>
+
+<script>setupForm();</script>
+
+</main>
+<footer class="footer">
+  © 2025 Maratona &middot; Hotsite acadêmico
+</footer>
+</body>
+</html>
